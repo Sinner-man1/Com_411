@@ -44,3 +44,26 @@ elif first_number > second_number:
    print("The second number is the smallest")
 else:
    print("Both are equal!")
+
+x=0
+y = 0
+
+print("Please enter the first number")
+first_number1= int(input())
+if first_number1 %2 == 0:
+   x +=1
+elif  first_number1 %2 !=0:
+ y+=1
+print("Please enter the second number")
+second_number1 = int(input())
+if second_number1%2 == 0:
+   x+=1
+elif  second_number1%2 !=0:
+   y+=1
+print("Please enter the third number")
+third_number1 = int(input())
+if third_number1 %2 == 0:
+   x+=1
+elif  third_number1%2 !=0:
+   y+=1
+print(f"There were {x} even and {y} odd")
