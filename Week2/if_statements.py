@@ -24,3 +24,11 @@ elif direction == 'left':
    print("I am moving in a left direction!")
 else:
    print("I am moving in a right direction")
+
+
+print("Please enter a whole number.")
+number = int(input())
+if number%2 == 0:
+   print(f"The number {number} is an even number.")
+else:
+   print(f"The number {number} is an odd number.")
