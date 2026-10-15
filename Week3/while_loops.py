@@ -28,3 +28,12 @@ while user_input2 > bars:
     bars += 1
     print(f"{bars * '█' } bars charged")
 print("The battery is fully charged.")
+
+
+
+
+
+print("Please enter a phrase:")
+user_input3 = len(input())
+multiple = user_input3 * " hi "
+print(multiple)
