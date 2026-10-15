@@ -16,3 +16,15 @@ while user_input1 > obstacles:
     obstacles +=1
     print(f"{obstacles} obstacles avoided")
 print("All obstacles have been avoided.")
+
+
+
+
+print("How many bars should be charged?")
+user_input2 = int(input())
+bars = 0
+while user_input2 > bars:
+    print("Charging:")
+    bars += 1
+    print(f"{bars * '█' } bars charged")
+print("The battery is fully charged.")
