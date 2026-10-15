@@ -4,3 +4,15 @@ removed_apples = 0
 while user_input > removed_apples:
     print("Removed apple")
     removed_apples += 1
+
+
+
+
+print("How many obstacles must I avoid?")
+user_input1 = int(input())
+obstacles = 0
+while user_input1 > obstacles:
+    print("Avoiding...Done!", end = " ")
+    obstacles +=1
+    print(f"{obstacles} obstacles avoided")
+print("All obstacles have been avoided.")
