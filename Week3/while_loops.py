@@ -37,3 +37,14 @@ print("Please enter a phrase:")
 user_input3 = len(input())
 multiple = user_input3 * " hi "
 print(multiple)
+
+
+#[Tasks 5] Repeatitive Step 
+
+print("Calculating the sum of the first 100 numbers...")
+sum = 0
+total = 0
+while sum <= 100:
+    total += sum
+    sum += 1
+print(f"The sum of the first 100 numbers is: {total}")  
