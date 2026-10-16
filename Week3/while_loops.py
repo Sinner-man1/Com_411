@@ -60,3 +60,5 @@ while sum <= user_number:
     total += number
     sum += 1
 print(f"The answer is: {total}")  
+
+   #[Tasks 7]
