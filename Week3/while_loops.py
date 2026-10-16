@@ -47,4 +47,16 @@ total = 0
 while sum <= 100:
     total += sum
     sum += 1
-print(f"The sum of the first 100 numbers is: {total}")  
+print(f"...Done! The answer is: {total}")  
+
+# Sum user number 
+print( "How many numbers should I sum up?")
+user_number = int(input())
+sum = 1
+total = 0
+while sum <= user_number:
+    print(f"Please enter number {sum} of {user_number}")
+    number = int(input())
+    total += number
+    sum += 1
+print(f"The answer is: {total}")  
