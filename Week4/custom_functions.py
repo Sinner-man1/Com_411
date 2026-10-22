@@ -80,3 +80,33 @@ def create_ladder():
 
 
 create_ladder()
+
+
+# Task 9
+def sum_weights(weight1, weight2):
+    return weight1 + weight2
+
+
+def calc_avg_weight(weight1, weight2):
+     avg_weight = (weight1 + weight2) / 2
+     return avg_weight
+
+
+def run():
+    print("What is the weight of the person?")
+    weight1 = float(input())
+    print("What is the weight of their inventory?")
+    weight2 = float(input())
+    print("What would you like to calculate (sum or average)?")
+    answer = input().lower().strip()
+    if answer == "sum":
+        action = sum_weights(weight1, weight2)
+        print(f"The sum of weights is {action}")
+    elif answer == "average":
+        action = calc_avg_weight(weight1, weight2)
+        print(f"The average of weights is {action}")
+    else:
+        print("Sorry, I didn't understand.")
+
+
+run()
