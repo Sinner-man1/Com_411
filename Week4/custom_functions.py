@@ -54,7 +54,7 @@ cross_bridge(6)
 
 
 # Task 7
-def climb_ladder(gunclimbed, climbed):
+def climb_ladder(unclimbed, climbed):
     if unclimbed > climbed:
         print("Still some way to go!")
     else:
@@ -63,3 +63,20 @@ def climb_ladder(gunclimbed, climbed):
 
 climb_ladder(5, 2)
 climb_ladder(2, 5)
+
+
+# Task 8
+def display_ladder(steps):
+    for step in range(steps):
+        print("| |")
+        print("***")
+
+
+def create_ladder():
+    user_input = input()
+    steps = int(user_input)
+    display_ladder(steps)
+    print("| |")
+
+
+create_ladder()
