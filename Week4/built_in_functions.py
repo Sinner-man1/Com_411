@@ -6,3 +6,17 @@ if len(standard_char) == 1:
 else:
     print("Character is more than or less than one.")
 print("Program Ended!")
+
+# Task 2
+
+print( "Program Started!")
+print( "Please enter an ASCII code:")
+standard_char = abs(int(input()))
+if standard_char in range (32, 127):
+    print(f"The character represented by the ASCII code {standard_char} is {chr(standard_char)}.")
+else:
+    print("Character is wrong.")
+print("Program Ended!")
+
+# Task 3
+
