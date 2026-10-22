@@ -2,9 +2,12 @@
 def listen():
     print("Enter a word representing sound")
     user_input = input()
-    print (f"That was a loud {user_input}!")
+    print(f"That was a loud {user_input}!")
+
+
 listen(
 )
+
 
 # Task 4
 def identity():
@@ -14,9 +17,12 @@ def identity():
         print("it's time to run!")
     else:
         print("We will be fine.")
+
+
 identity()
 
-#Task 5
+
+# Task 5
 def escape_by(plan):
     if plan == "jumping over":
         print("We cannot escape that way! The boulder is too big!")
@@ -27,6 +33,24 @@ def escape_by(plan):
     else:
         print("We cannot escape that way! The boulder is in the way!")
 
+
 escape_by("jumping over")
 escape_by("running around")
 escape_by("cross bridge ahead")
+
+
+# Task 6
+def cross_bridge(steps):
+    print("Crossed step \n" * steps, end="")
+
+    if steps > 5:
+        print("The bridge is collapsing!")
+    else:
+        print("we must keep going!")
+
+
+cross_bridge(3)
+cross_bridge(6)
+
+
+# Task 7
