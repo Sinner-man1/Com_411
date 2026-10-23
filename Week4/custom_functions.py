@@ -88,8 +88,8 @@ def sum_weights(weight1, weight2):
 
 
 def calc_avg_weight(weight1, weight2):
-     avg_weight = (weight1 + weight2) / 2
-     return avg_weight
+    avg_weight = (weight1 + weight2) / 2
+    return avg_weight
 
 
 def run():
@@ -110,3 +110,14 @@ def run():
 
 
 run()
+
+
+# Task 10
+print("Please enter a word")
+print("Choose on of the following:")
+print("""1) Display in a Box – display the word in an ASCII art box /n
+2) Display Lower-case – display the word in lower-case e.g. hello /n
+3) Display Upper-case – display the word in upper-case e.g. HELLO /n
+4) Display Mirrored – display the word with its mirrored word e.g. Hello | olleH /n
+5) Repeat – ask the user how many times to display the word and then display the 
+word that many times alternating between upper-case and lower-case.""")
