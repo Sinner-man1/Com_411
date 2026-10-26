@@ -121,3 +121,29 @@ print("""1) Display in a Box – display the word in an ASCII art box /n
 4) Display Mirrored – display the word with its mirrored word e.g. Hello | olleH /n
 5) Repeat – ask the user how many times to display the word and then display the 
 word that many times alternating between upper-case and lower-case.""")
+
+def display_box(user_input):
+    num_dashes = 4 + len(user_input)
+    print("-" * num_dashes)
+    print(f"| {user_input} |")
+    print("-" * num_dashes)
+
+
+
+def to_lower(user_input):
+    lower = user_input.lower()
+    return lower
+
+
+def to_upper(user_input):
+    upper = user_input.upper()
+    return upper
+
+user_input = (input())
+if user_input == 1:
+    display_box(user_input)
+elif user_input == 2:
+       print(to_lower(user_input))
+elif user_input == 3:
+        print(to_upper(user_input))
+elif user_input == 4:
