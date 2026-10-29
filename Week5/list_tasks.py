@@ -1,3 +1,6 @@
+from Week2.multiple_conditions import user_input
+
+
 def direction():
     steps = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
     return steps
@@ -43,5 +46,28 @@ def run_task3():
 
 
 
+
+#Task 4
+
+
+
+def menu_and_input():
+    print("Please select a direction:")
+    returned = direction()
+    for i in range(len(returned)):
+        print(f"{i}: {returned[i]}")
+    user_input = int(input())
+    return returned[user_input]
+
+
+
+
+def run_task4():
+    route= []
+    print("Working out escape route...")
+    for i in range(5):
+        route.append(menu_and_input())
+    print(f"Escape route: {route}")
+
 if __name__ == "__main__":
-    run_task3()
+    run_task4()
