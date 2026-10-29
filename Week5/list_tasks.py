@@ -24,8 +24,24 @@ def run_task2():
         print(f"{path[i]} for  {path[i + 1]} steps")
 
 
-run_task2()
+if __name__ == "__main__":
+    run_task2()
 
 
 
 #Task 3
+
+def menu():
+    print("Please select a direction:")
+    returned = direction()
+    for i in range(len(returned)):
+        print(f"{i}: {returned[i]}")
+
+
+def run_task3():
+    return menu()
+
+
+
+if __name__ == "__main__":
+    run_task3()
